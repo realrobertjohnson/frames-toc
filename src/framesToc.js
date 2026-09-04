@@ -12,7 +12,7 @@ export const framesToc = async () => {
     const selectedWidgets = await board.getSelection();
 
     if (selectedWidgets.length === 0) {
-      await miro.board.notifications.showError("No objects selected. Select something and try again.");
+      await miro.board.notifications.showError("No frames selected. Select one or more frames and try again.");
       return;
     }
 
