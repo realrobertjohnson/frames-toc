@@ -60,6 +60,7 @@ export const framesToc = async () => {
       },
     });
 
+    await board.deselect({ id: selectedWidgets.map((w) => w.id) });
     await board.select({ id: [newText.id] });
     await board.viewport.zoomTo([newText]);
 
